@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>CONTATO</h2>
+      </div>
+
+      <form id="form" class="form">
+        <div class="form-contact">
+          <lebal for="name">Seu nome</lebal>
+          <input
+            type="text"
+            id="name"
+            placeholder="Seu nome completo"
+            required
+          />
+        </div>
+
+        <div class="form-contact">
+          <lebal for="email">Email</lebal>
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu email"
+            required
+          />
+          <span id="emailError" class="error"></span>
+        </div>
+
+        <div class="form-contact">
+          <lebal for="subject">Assunto </lebal>
+          <input
+            type="text"
+            id="subject"
+            placeholder="Assunto da mensagem"
+            required
+          />
+        </div>
+
+        <div class="form-contact">
+          <lebal for="message">Sua mensagem </lebal>
+          <textarea
+            type="text"
+            id="message"
+            placeholder="Crítica, reclamação, elogio, sugestão"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
